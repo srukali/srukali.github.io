@@ -1,0 +1,186 @@
+ 
+html{
+  overflow-x: hidden;
+}
+body{
+  top:  0;
+  bottom:  0;
+	font-family: 'century gothic', sans-serif;
+	font-weight: 100;
+	right: 0;
+	left: 0;
+	position: relative;
+	margin: 0px;
+}
+
+h1, h2, h3{
+	font-family: 'century gothic', sans-serif;
+	font-weight: 100;
+	font-size:  2em;
+	color: black;
+	background-color: white;
+}
+
+h3{ /*these are the headings of the main content*/
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 15px 10px;
+	text-align: center;
+	margin: 0px;
+}
+h4{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+h5{ /*these are the headings of inside the main content*/
+	padding: 10px 0px 10px 10px;
+	font-weight: 400;
+	position: relative;
+	font-size: 1.3em;
+	text-align: left;
+	margin: 0px 0px 5px;
+}
+
+h1{ /*this is the main header*/
+  font-size: 4em;
+  text-align: center;
+	margin: 0px 0 10px;
+}
+h2{ /*these are the nav headings*/
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+}
+p{ /*this is the serif font*/
+	font-family: 'georgia', serif;
+	font-weight: 300;
+	text-align: justify;
+	width: 700px;
+	text-indent: 20px;
+}
+
+header{
+	background-color:  white;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	position:  fixed;
+	box-shadow: 0 1px 3px #151513;
+}
+nav{
+	text-align: center;
+	position: relative;
+	width:  100%;
+	margin: 10px 0px;
+	padding-bottom: 10px;
+}
+nav a{
+	color:  black;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: white;
+}
+
+
+.about{ background-color: #97caff; }
+.about:hover{ color: #c0dfff; }
+.resume{ background-color: #a59eff; }
+.resume:hover{ color: #736bda; }
+.projects{ background-color: #8fffda; }
+.projects:hover{ color: #087912; }
+.manifesto{ background-color: #679fda; }
+.manifesto:hover{ color: #086a97; }
+.contact{ background-color: #9d97f5; }
+.contact:hover{ color: #530890; }
+
+
+.positioning{
+	position: relative;
+}
+.paragraph{
+	margin: 10px 0px 40px;
+
+}
+
+
+#about h3{
+	background-color: #97caff;
+}
+#resume h3{
+	background-color: #a59eff; 
+}
+
+#downloadResume{
+	
+}
+#downloadResume:hover{
+	color: #b16a0f;
+	font-weight: 400;
+	background-color: #fdf7e2;
+}
+
+#projects h3{
+	background-color: #d9fadc;
+}
+#projects h4{
+	padding: 0 0px 0 10px;
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: left;
+	font-weight: 400;
+}
+
+footer{
+	bottom: 0;
+	margin: 5px 0;
+	height: 45px;
+	width: 100%;
+	background-color: #eaeaea;
+}
+footer h5{
+	text-align: center;
+	padding: 10px 0;
+	font-weight: 100;
+	font-size: 1em;
+	
+}
+.hide{
+	display: none;
+}
+
+header{
+	height: 180px;
+}
+nav{
+	display: inline-block;
+}
+
+.content{
+	top: 180px;
+	position: relative;
+	margin: 0px;
+
+}
+.paragraph{
+	width:  800px;
+	position: relative;
+  
+}
+
+#resume .paragraph{
+	width: 800px;
+}
+
+.launchButton{
+	padding: 15px 20px;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 30px;
+}

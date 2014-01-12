@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<div style="margin-left:15%; 
+            margin-right:15%;
+            border: solid white;
+            border-radius: 40px;
+            border-width: 3px;
+            width:850px; 
+            padding:20px; 
+            background-color: #ffffff;
+            font-family: verdana; ">
+
+<style>
+
+  body {
+  padding-top: 0px;
+  text-align: left;
+  font-family: verdana;
+  background: #df7b39;
+  background-size: cover;
+}
+
+h1, h2 {
+  display: inline-block;
+}
+
+.headers{
+  margin-bottom: 50px;
+}
+.copyright{
+  margin-top: 50px;
+  font-size: 10px;
+}
+
+</style>
+
+<img src = "http://i71.photobucket.com/albums/i160/angelbrat2311/treeheader.png">
+
+<div class = "headers">
+<img src = "http://i71.photobucket.com/albums/i160/angelbrat2311/banner2.png">
+</div>
+Tree models have been developing for many years. Computer simulation of branching patterns started with 
+concepts developed by von Neumann and Ulam where the branching pattern was created iteratively,
+starting with a single colored cell in a triangular grid, then coloring cells that touch one and 
+only one vertex of a cell colored in the previous iteration step. This basic idea has given rise 
+to several extensions, including those that simulate growth processes that react to the environment.
+All the approaches emphasize interactions between various elements of a growing structure,
+as well as the structure and environment. These interactions add to the complexity of models 
+just as they clearly influence the development of real plants. Here, we will look at the history of 
+modeling trees and focus in on a new method, the space colonization algorithm, which treats competition
+for space as the key factor in determining the branching structure for trees.
+
+<div class = "headers">
+<img src = "http://i71.photobucket.com/albums/i160/angelbrat2311/banner1.png">
+</div>
+As early as 300BC, humans began observing algorithms that are found in nature. Theophrastus, a Greek native and Aristotle's successor, noted that "most [roses] have five petals, but some have twelve or twenty, and some a great many more than these." He had identified something very close to the Fibonacci sequence, which numbers include 13 and 21. This observation has come to be known today as Fibonacci phyllotaxis.
+<br><br>
+In 1917 D'Arcy Thompson, a Scottish biologist and mathematician, published the book "On Growth and Form" which pointed out several correlations between biological forms, mathematics, and mechanical structures. In one example he demonstrates the similarity between different species of fish just by applying different mathematical transformations, such as shear. He also, once again, demonstrates many examples of the numerical relationships between the structures in plants and the Fibonacci sequence. 
+<br><br>
+In 1952 Alan Turing, a very famous British computer scientist, wrote an article titled "The Chemical Basis of Morphogenesis" which describes the way that chaos may arise out of a naturally uniform state. The theory he describes in this article is called reaction-diffusion, or the theory of morphogenesis, which today serves as a basic model for theoretical biology, describing the self-organization and pattern formation in biological systems. This system has been established as a prototype model for pattern formation, such as those seen in plants. The results of this equation display a great range of behavior. 
+<br><br>
+In the 1970's Astrid Lindenmayer extended this observation with the invention of the mathematical formula of L-systems, which describe a recursive branching structure.
+<br><br>
+Visual modeling of tree architecture began with the work of Hisao Honda in the 1970's. He proposed that modeling trees as recursive branching structures should be characterized by two geometric attributes: branching angles and length ratios of consecutive branch segments. The basic tenet of Hondas approach is to treat a tree as a recursive branching structure, which underlies most generative tree models proposed today. 
+<br><br>
+From a biological point of view, this recursive branching structure does make sense when imaging how a young tree grows: single straight upright stem that grows buds that turn into twigs and then branches. However, when taking into account older trees or shrubs, this model seems to be unsuccessful. It fails to take into consideration flowering, or that some branches might simply stay as twigs, or not all branches become major limbs.
+<br><br>
+As early as 1962, Stanislaw Ulam, a renowned Polish mathematician, used the concept of explaining tree architecture in terms of competition for space to create a 2D cellular automation model of abstract tree-like branching structures. This led to the development of our algorithm: The Space Colonization Algorithm.
+<br>
+<div class = "headers">
+<img src = "http://i71.photobucket.com/albums/i160/angelbrat2311/banner3.png">
+</div><b>Space Colonization Algorithm</b>
+<br>
+<br> For this presentation we will explore an alternative approach to modeling trees, where the competition of branches for space, rather than the recursive branching process, plays the dominant role in determining the form of trees and shrubs. The key idea in this approach is the iterative addition of new elements (nodes) to the tree structure formed in previous steps. This process is guided by the proximity of points marking the availability of free space. This method allows generated forms to factor in environmental factors, such as light, and adapt to the presence of neighboring plants and obstacles. This method is biologically justifiable; In nature, the competition for space is likely mediated by quantity and quality of light. 
+<br>
+<br> <b>THE METHOD</b>
+
+<br>
+<br> 1) A three-dimensional envelope of the tree 
+crown is given as input. It can be specified using a method that makes it
+easy to test if a given point lies inside or outside the enclosed volume.
+<br>
+<br>2) At the beginning of tree generation, the space within the envelope
+is seeded with a set of attraction points (a). These points signal the
+availability of empty space for growth, and are removed when they are reached
+by a branch. The distribution of these attraction points is a user-controlled 
+attribute of the method.
+<br>
+<br> 3) Given the attraction points , the tree skeleton is formed using an
+iterative process. Beginning with the signal node at the base of the tree, in
+each iteration, new nodes, delimiting the short branch segments, extend the 
+skeleton to the nearby attraction points.
+<br>
+<br> 4) The process terminates when all attraction points have been
+removed, when no nodes are within the radius of influence of the remaining 
+attraction points, or when a user-specified number of iterations has been 
+reached
+<br>
+<br>  
+This method generates a wide variety of trees and shrubs, 
+controlled by a small number of parameters and algorithm variations. The 
+cornerstone of this method is the space colonization algorithm.
+<br>
+<br>
+<br> <b>THE ALGORITHM</b>
+<br>
+<br>
+1) Begin with the initial configuration of <b>N</b> attraction points (this number is usually 
+in the hundreds or thousands) and one or several tree nodes.
+<br>
+<br>
+2) In each iteration, an attraction point may influence the tree node that
+is the closest to it. This influence occurs if the distance between the 
+point and the closest node is less then the radius of influence <b>d</b>.
+<br>
+<br>
+3) There may be several attraction points that influence a single tree node 
+<b>v</b>: we denote this set of points by <b>S(v)</b>. If S(v) is not empty,
+a new tree node <b>v'</b> will be created and attached to v by segment <b>
+(v,v')</b>.
+<br>
+<br>
+4) The node v' is positioned at a distance <b>D</b> from v, in the
+direction defined as the average of the normalized vectors toward all 
+the sources <b>s</b> <img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at51412PM.png"> S(v). Thus, v' = v + Dn, where<br><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at51144PM.png">
+<br>
+<br>
+5*) Optionally, the direction of growth can be biased by a vector <b>g</b> which
+represents a combined effect of branch weight and tropisms using the equation
+<br><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at51158PM.png">
+<br>
+<br>
+6) Once the new nodes have been added, a check is performed to test which of the attraction 
+points will be removed because of their proximity to the tree branches that have grown toward
+them. An attraction point <b>s</b> is removed when there is at least one tree node <b>v</b> closer to
+<b>s</b> than the kill distance <b>k</b>.
+<br>
+<br>
+<br>
+The figure below illustrates the algorithm in steps a-h.
+<br><br>
+
+<br>
+<center><img src = "http://www.joesfer.com/wp-content/uploads/2010/09/SCA.png"></center>
+<br> 
+<br>
+(a) The tree structure in the image above consists of six nodes (black disks with white centers)
+and four attraction points (blue disks).<br><br>
+(b) At first, each attraction point is associated with the tree node closest to it [provided
+that the node is within the radius of influence (blue lines)]; this establishes the set of attraction points
+that influence each node.<br><br>
+(c) The normalized vectors from each tree node to the source that influences them are then found
+(black arrows).<br><br>
+(d) These vectors are added and their sum is normalized again (red arrows), which provides a
+base for location new tree nodes (red circles).<br><br>
+(e) The new nodes are incorporated into the tree structure, in this case extending the main
+axis and initiating a lateral branch.<br><br>
+(f) The neighborhoods of the attraction points (blue circles) are now tested for the inclusion
+of tree nodes.<br><br>
+(g) The two neighborhoods of the leftmost sources have been penetrated by the new branches (indicated by
+the bolder representation of the corresponding circles).<br><br>
+(h) The tree nodes closest to these points are now identified which begins the next iteration of 
+the algorithm.
+<br><br>
+<br><b>THE RESULTS</b><br><br>
+The set of figures below show the impact of the number of attraction points <b>N</b> and the kill distance <b>k</b>.
+<br><br>
+<center><img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at34433PM.png"></center>
+<br><br>
+- Decreasing <b>N</b> and increasing <b>k</b> yields tree crowns that are sparse.<br>
+- Decreasing <b>N</b> leads to irregular branches. This is because the addition/removal
+of an attraction point to/from the set affecting the branch tip can significantly change the
+direction of branch growth.<br>
+- Larger values of <b>k</b> increase the number of attraction points <b>N</b> that 
+affect individual branch tips. The individual points matter less, and smoothly curved 
+branches result.<br>
+<br>
+The figures below show the impact of the third numerical parameter of the algorithm, the 
+radius of influence <b>d</b>. They also show the impact of the envelopes on the crown 
+shape.<br><br>
+<center><img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at34445PM.png">
+<br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at34458PM.png">
+<br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at34517PM.png"><br><br></center>
+- As <b>d</b> decreases, branch tips tend to meander between attraction points, coming into,
+then leaving their zones of influence resulting in wiggly or gnarly appearence of branches.<br>
+- The shrubs in the first set of figures were generated using fan shape envelopes, whereas the 
+trees in the second set of figures were generated using conceptually infinite envelopes. The trees in
+the third set of figures show two trees generated using cylindrincal and conical envelopes.
+<br><br>
+The figure below shows a shrub generated with attraction points located 
+exclusively near the envelope. The structure has an open, sparse branch system, with
+small twigs limited to the crown surface.<br><br>
+<center><img src="http://i66.photobucket.com/albums/h253/musicvids_photos/ScreenShot2013-10-17at40726PM.png"><br><br></center>
+<div class = "headers">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/banner3.png">
+</div>
+The space colonization algorithm models the growth of a tree by letting its
+branches compete for resources (e.g. light and space) as they grow. The distribution
+and density of these resources contribute to the final shape of the tree.
+The space colonization algorithm lends itself to be able to easily adapt to environmental
+influences when architectural modeling, such as a wall blocking light to the tree.
+
+<br><br>For example, in this add-on for blender, you can can control
+the markers (attraction points) which populate the volume of the envelope (an
+ellipse in this case), leaves, branch shape and environmental influences.
+<br><br>
+In this add-on, when you add a tree a small skeleton appears where you place
+your cursor. When you move your cursor, the location of your cursor becomes the
+growth point (the application calls it the internode or branchpoint). As the growth
+point approaches a marker and gets close enough, the marker is removed and the
+subsequent growth is in the direction of a (slightly) different set of near markers.
+A growth point can have any number of markers in its radius of influence; however, a marker
+only has a single closest growth point. Therefore, the number of markers and
+their distribution is crucial in determining the final shape of the tree or shrub. Below are 
+some sample trees created with the add-on and their marker distributions.<br><br>
+<center><b>FEW ENDPOINTS VS. MANY ENDPOINTS</b><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/b4da50fb-f70c-4e93-9e69-c65b4760ca6e.jpg">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/f138e688-f830-4be4-a08f-a99fba3cc8e1.jpg"><br><br>
+<b>NEAR CENTRAL AXIS VS. NEAR SURFACE</b><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/473b5416-7339-4486-b133-53e96fd60a29.jpg">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/3fb98b1b-7962-46ff-b2bc-20df358095bc.jpg">
+<br><br>
+<b>MORE ENDPOINTS NEAR TOP VS. MORE ENDPOINTS NEAR BOTTOM</b><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/2b270821-a216-4e6e-a7f8-ef36442698c1.jpg">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/c1edb4e5-810e-4670-ba86-9c6a45ca6c02.jpg">
+<br><br>
+<b>MIX AND MATCH</b><br>
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/659a8fcd-e435-47ae-a7fb-1e5b84f5e54c.jpg">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/9423bb33-db54-4a60-9359-a5030e30ccd1.jpg"><br><br></center>
+The other aspect of this add-on that can effect the space colonization 
+algorithm is the ability to factor in environmental influences, as mentioned eariler.
+For example, the side of a tree will grow less if it receives less light due to
+being in the shadow of a building. To mimic this, don't place any markers in the
+shadowed area. The add-on checks whether any of the markers it generates are
+inside any of the selected mesh objects in your scene and will discard them if they are.
+In the add on you can also add leaves and change the branch shape.
+<br><br>With any luck you can make trees that looks like this!
+<br><br>
+<center><img src="http://i66.photobucket.com/albums/h253/musicvids_photos/7830826f-5d8f-43da-9993-7bb0be647926.jpg">
+<img src="http://i66.photobucket.com/albums/h253/musicvids_photos/e3107eb6-f040-4db5-a664-d1ecd1da41d5.jpg">
+</center><br><br> You can download and read more about the add on here:
+<a href= "http://blenderthings.blogspot.com/2013/02/a-new-tree-add-on.html"> 
+  Blender Things: A New Tree Add-On
+</a>
+
+<div class = "headers">
+<img src = "http://s71.photobucket.com/albums/i160/angelbrat2311/banner4.png">
+</div>
+Apple Application: 
+<br>My Graphics is a drawing program that generate images based upon spiral and fractal patterns. There are virtually unlimited number of variations. Get fascinated by the various images and share with friends.
+<br>Unique Features: 
+- Generate spirals with custom lengths and angles
+- Generate variations of Koch curves with custom levels
+- Generate tree like patterns with custom angle and lengths
+- Custom drawing color and line width
+- Random mode
+<br>
+<br> Algorithm will advance to the point where the code knows what type of foliage you want to draw
+<br> Eventually, the algorithm will allow for more realism and the variety of foliage will become more specific/natural
+<br>
+<br> A further question is the possibility of using the space colonization algorithm in the context of interactive procedural modeling, where key aspects of plant form are specified by the user and elaborated upon by an algorithm
+
+<div class = "headers">
+<img src = "http://i71.photobucket.com/albums/i160/angelbrat2311/banner5.png">
+</div>
+<br>
+<a href= "https://docs.google.com/presentation/d/16CLJ8KiyIbhgElMgB8f_Pn86jxrpyiYBOPPis2tpmw4/edit#slide=id.p"> 
+  Presentation
+</a>
+<br>
+<a href= "http://algorithmicbotany.org/papers/abop/abop.pdf"> 
+  PDF: The Algorithmic Beauty of Plants
+</a>
+
+<br>
+<a href= "http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf"> 
+  PDF: Space Colonization Algorithm
+</a>
+<br>
+<a href= "http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf"> 
+PDF: On Growth and Form - D'Arcy Thompson
+</a>
+<br>
+<a href= "http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf"> 
+PDF: Ratio of Tree Branch Lengths - Hisao Honda
+</a>
+<br>
+<a href= "http://blenderthings.blogspot.com/2013/02/a-new-tree-add-on.html"> 
+  Blender Things: A New Tree Add-On
+</a>
+
+
+<div class ="copyright">
+Copyright © 2013 Team Aristocats. All rights reserved.
+</div>
+
+</div>
+</html>
