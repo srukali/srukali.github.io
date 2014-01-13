@@ -177,7 +177,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 3em 0em;
+		padding: 5em 0em;
 		background: #B03500 url(images/overlay.png) repeat;
 	}
 
@@ -297,7 +297,7 @@
 	#wrapper3
 	{
 		overflow: hidden;
-		padding: 1em 0em;
+		padding: 0em 0em;
 		background: #FFF;
 	}
 	
@@ -316,7 +316,7 @@
 	#welcome .title
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 4em 0em;
 		text-align: center;
 		color: rgba(0,0,0,0.3);
 	}
