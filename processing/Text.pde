@@ -1,5 +1,4 @@
 class Text{
-PFont font, font1, font2;
 Button atlButton;
 Button lvButton;
 Button chiButton;
@@ -13,12 +12,10 @@ TwitterClass t = new TwitterClass();
   
   void display(){
     
-    font1 = loadFont("AlegreyaSansSC-Light-48.vlw");
-    textFont(font1, 40);
+    textFont(createFont("AlegreyaSansSC",40));
     text("E-motion", 30,50);
     
-    font2 = loadFont("AlegreyaSansSC-Regular-48.vlw");
-    textFont(font2, 16);
+    textFont(createFont("AlegreyaSansSC",16));
     text("Happy:", 620, 480);
     text("Sad:", 690, 480);
     text("A glance into the mood of Twitter", 30, 80);
@@ -37,8 +34,7 @@ TwitterClass t = new TwitterClass();
   }
   
   void updateCount(){
-    font = loadFont("AlegreyaSansSC-Regular-48.vlw");
-    textFont(font, 32);
+    textFont(createFont("AlegreyaSansSC",32));
     text(tc.tweetCount2(), 620, 500);
     text(tc.tweetCount(), 690, 500);
   }
