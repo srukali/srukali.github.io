@@ -30,15 +30,15 @@ h1.brand {
 .nav li{display:inline-block; float:none;}
 .nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c; font-family: "Myriad Pro";}
 
- #portfolioSection, #ourServices, #blogSection{padding:70px 0 ; }
+ #portfolioSection, #aboutMe, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
-#ourServices{background: #fff;text-align: center;border-top: 1px solid #ddd;}
-#ourServices h4 {
+#aboutMe{background: #fff;text-align: center;border-top: 1px solid #ddd;}
+#aboutMe h4 {
     margin:25px 0;
 }
 
-#ourServices p {
+#aboutMe p {
     color: #5E5E5E;
     font-size: 19px;
     line-height: 27px;
@@ -52,7 +52,7 @@ h1.brand {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
-	margin: 15px 0;
+    margin: 15px 0;
 }
 #portfolioSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
 #portfolioSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
@@ -65,34 +65,34 @@ h1.brand {
 #blogSection .span12{ margin:0;margin-bottom: 36px;}
 
 
-#meetourteamSection{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
-#meetourteamSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
-#meetourteamSection .thumbnails  p {
+#resumeSection{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
+#resumeSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
+#resumeSection .thumbnails  p {
     color: #909090;
     font-size: 22px;
     line-height: 27px;
-	margin:20px 0;
+    margin:20px 0;
 }
 
-#meetourteamSection  p {
+#resumeSection  p {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
-	margin: 15px 0;
+    margin: 15px 0;
 }
 
-#meetourteamSection h4 {
+#resumeSection h4 {
     font-size: 37px;line-height: 40px; margin:10px 0;
 }
-#meetourteamSection h5 {
+#resumeSection h5 {
     font-size: 23px;
 }
-#meetourteamSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
-#meetourteamSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
-#meetourteamSection .thumbnails > li.span4{ width:350px;}
-#meetourteamSection .thumbnails a.twitter{ height:56px; width:56px; background:url(../img/thum-t-icon.png) no-repeat center center;display:inline-block;}
-#meetourteamSection .thumbnails a.facebook{ height:56px; width:56px; background:url(../img/thum-f-icon.png) no-repeat center center; display:inline-block;}
-#meetourteamSection .thumbnails a.pin{ height:56px; width:56px; background:url(../img/thum-p-icon.png) no-repeat center center;display:inline-block;}
+#resumeSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
+#resumeSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
+#resumeSection .thumbnails > li.span4{ width:350px;}
+#resumeSection .thumbnails a.twitter{ height:56px; width:56px; background:url(../img/thum-t-icon.png) no-repeat center center;display:inline-block;}
+#resumeSection .thumbnails a.facebook{ height:56px; width:56px; background:url(../img/thum-f-icon.png) no-repeat center center; display:inline-block;}
+#resumeSection .thumbnails a.pin{ height:56px; width:56px; background:url(../img/thum-p-icon.png) no-repeat center center;display:inline-block;}
 
 
 #recentpostSection{ padding:70px 0 ; background:#b5d5e1;  text-align: center; }
@@ -101,15 +101,15 @@ h1.brand {
     color: #909090;
     font-size: 22px;
     line-height: 27px;
-	margin:20px 0 0;
-	padding-bottom:10px;
+    margin:20px 0 0;
+    padding-bottom:10px;
 }
 
 #recentpostSection  p {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
-	margin: 15px 0;
+    margin: 15px 0;
 }
 
 #recentpostSection h4 {
@@ -131,7 +131,7 @@ h1.brand {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
-	margin: 15px 0;
+    margin: 15px 0;
 }
 
 
@@ -203,8 +203,8 @@ height: 2px;
 .blockDtl{background:#fff}
 
 .carousel-control { 
-	background: none;
-	border: none;
+    background: none;
+    border: none;
 }
 
 
