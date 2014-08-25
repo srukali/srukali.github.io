@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+
+	<!-- Bootstrap files-->
+	<link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery plugins -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
+
+
+	<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+		  ga('create', 'UA-53941017-1', 'auto');
+		  ga('send', 'pageview');			
+	</script>
+	
+</head>
+<body>
+
+	<script>
+        $(document).ready(function(){
+            function fix_height(){
+                var h = $("#tray").height();   
+                $("#preview").attr("height", (($(window).height()) - h) + "px");
+            }
+            $(window).resize(function(){ fix_height(); }).resize();
+                                //$("#preview").contentWindow.focus();
+        });
+    </script>
+
+<div id="wrapper3">
+
+	<div id="welcome" class="container">
+	
+		<div class="title">
+		<center><img src = "images/circlehead.png" height="150" width="150"><br></center>
+
+			<h1>Katelyn Smith</h1>
+			<span class="byline">Welcome to my website.</span> </div>
+		<div class="column1">
+			<div class="box">
+				<a href="#about" class="button button-small">About</a> </div>
+		</div>
+		<div class="column2">
+			<div class="box">
+				<a href="#resume" class="button button-small">R&eacute;sum&eacute;</a> </div>
+		</div>
+		<div class="column3">
+			<div class="box">
+				<a href="#portfolio" class="button button-small">Portfolio</a> </div>
+		</div>
+		<div class="column4">
+			<div class="box">
+				<a href="#contact" class="button button-small">Contact</a> </div>
+		</div>
+	</div>
+</div>
+
+<div id="wrapper1">
+	<div id="about" class="container">
+		<div class="title">
+			<h2>About me</h2>
+		</div>
+		<div class="content">
+			<center><img src = "images/circlehead2.png" height="150" width="150"><br></center>
+			<p>I'm Katelyn, a Digital Arts and Sciences (DAS) student at the University of Florida, a slave to my internet connection, and a fervent believer in the Oxford comma. My interests include Human-Computer Interaction, User Experience, Web Development, Mobile Development, Graphic Design, and Product Management. (Pretty much a little bit of everything.)
+			<p>In case you were interested, DAS is a discipline where computer science and art intersect - the curriculum includes working with 3D modeling and animation software, Java GUI, immersion into video game development, and electives that let a student explore a greater breadth of artistic knowledge on design and aesthetics. I think it's a fantastic and unique program that offers me opportunities I wouldn't have found elsewhere.
+			<p>In my spare time, which is hard to come by these days, I enjoy baking up some cupcakes, watching an episode of my latest favorite show on Netflix, or tending to my orchid that I'm determined to get blooming again. At nights you may find me hanging out with my ball python Koa, or rather she may be hanging out on me.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id="wrapper1">
+	<div id="resume" class="container">
+		<div class="title">
+			<h2>R&eacute;sum&eacute;</h2>
+		</div>
+		<div class="content">
+			<h3><span class="byline">| Education</span></h3>
+			<b>Bachelor of Science in Digital Arts and Sciences, May 2015</b><br>
+			University of Florida, College of Engineering<br>
+			3.6 GPA<br></p>
+			<br>
+			
+			<h3><span class="byline">| Work Experience</span><br></h3>
+			<b>IT Intern - Supply Chain, May 2014 to August 2014</b><br>
+			The Home Depot<br>
+			<p>Designed and created mockups of a UI using Balsamiq
+			<p>Communicated with the business about project requirements
+			<p>Developed a front end using Angular and Twitter Bootstrap
+			<p>Participated in an Agile development environment
+			<br></p>
+			
+			<b>IT Intern - Data Integration, May 2013 to August 2013</b><br>
+			The Home Depot<br>
+			<p>Implemented new data integration software (Talend) on a specialty team
+			<p>Wrote Talend documentation for company-wide use
+			<p>Developed a job in Talend to automate the data integration process from a Microsoft SQL Server to the Salesforce.com cloud
+			<p>Scheduled automated daily events utilizing Maestro to be triggered via web services
+			<p>Salvaged at least 14 hours per week worth of labor by automating this process
+			<br></p>
+
+			<b>Campus Ambassador, June 2011 to Present</b><br>
+			The Princeton Review<br>
+			<p>Attended targeted student group meetings and presented information about our test prep courses
+			<p>Engineered and implemented marketing strategies to increase prospect count
+			<p>Served as a liaison between students and our company
+			<p>Proctored practice exams for SAT and ACT
+			<br></p>
+
+			<b>Multimedia Director, June 2011 to May 2012</b><br>
+			Pride Awareness Month 2012<br>
+			<p>Designed, obtained, and managed distribution of $1,000+ of promotional material<br>
+			<p>Managed marketing and online presence on social media sites<br>
+			<p>Assisted with the overall planning and maintenance of 20+ events and a budget of $30,000+<br>
+			<br></p>
+			
+			<h3><span class="byline">| Projects</span><br></h3>
+			<b>Origin the Android Game, May 2014</b><br>
+			<p>Served as the Aesthetic Lead on this collaborative Waterfall videogame design project<br>
+			<p>Spent over 170 hours refining the documentation, art assets, level layouts, storyline, etc.<br>
+			<br></p>
+			
+			<b>Speedy Keys, May 2014</b><br>
+			<p>Served as the Product Manager in an Agile team environment<br>
+			<p>Helped research, create, and design an Xbox keyboard interface that improved user experience<br>
+			<br></p>
+			
+			<b>E-motion, April 2014</b><br>
+			<p>Developed an interactive data visualization using Processing and the Twitter API<br>
+			<p>Project allows users to see the overall mood of a city by displaying tweets in colored dots<br>
+			<br></p>
+			
+			<b>L-System Explorer, November 2013</b><br>
+			<p>Developed a Java application that allows users to generate unique Lindenmayer systems based on user input<br>
+			<p>GUI allows users to change color, size, iterations, angle, rotation, or premade selections<br>
+			<br></p>
+			
+			<h3><span class="byline">| Skills</span><br></h3>
+			HTML, CSS, Less, Angular, Bootstrap, Balsamiq, Java, C++, SQL, Agile, Git, Eclipse, Netbeans, Unity, Adobe Suite, Autodesk Maya, 
+			Blender, Talend
+			<br></p>
+
+			<h3><span class="byline">| Relevant Coursework</span><br></h3>
+			Data Structures<br>
+			3D Modeling<br>
+			3D Animation<br>
+			Theory and Practice of Multimedia Production<br>
+			Human Computer Interaction<br>
+			Web Apps<br>
+			Interactive Processing<br>
+			<br>
+
+			<h3><span class="byline">| Extracurricular</span><br></h3>
+			<b>Grooveshark University, September 2013 to December 2013</b><br>
+			Web Development Student<br>
+			<br>
+			<b>Out in Science, Technology, Engineering, and Mathematics, January 2013 to May 2014</b><br>
+			External Vice President, Founding Officer<br>
+			<br>
+			<b>Society of Women Engineers, September 2012 to Present</b><br>
+			2013 Mr. Engineer Advertising Chair<br>
+			
+			<br></p>
+			<h3><span class="byline">| Awards</span><br></h3>
+			Dean's List, Fall 2011 and Spring 2013<br>
+			Magna Cum Laude Potential Candidate, Spring 2013<br>
+			Outstanding DIrector: Pride Awareness Month, April 2012<br>
+			Florida Academic Scholar, May 2010<br>
+
+			</div>
+			<center>
+			<a href="Resume.pdf" class="button">Download R&eacute;sum&eacute; PDF</a> </center></div>
+	</div>
+
+<div id="wrapper1">
+	<div id="portfolio" class="container">
+		<div class="title">
+			<h2>My Projects</h2>
+			<div class="content">
+			<br>
+			
+			<h3><span class="byline">| Origin, the Android Game</span></h3> 
+			I was the Aesthetic Lead in this team project for my class Theory and Practice of Multimedia Production, where we had to develop a narrative-based video game.
+			We chose to create an intuition based side-scroller, telling the tale of Ooh, a mysterious little creature from the forest. Please feel free to visit the Google
+			Play store and download the game today!
+			<br><br>
+			<center>
+			<img src = "/images/origin.png" alt="Origin the Game" height="450" width="300"><br>
+			<a href="https://play.google.com/store/apps/details?id=com.OriginalOrigins.Origin" class="button">Download Origin</a></center>
+			<br><br><br>
+			
+			<h3><span class="byline">| E-motion</span></h3> 
+			In my class Interactive Processing, I chose to create a data visualization for the term project.
+			This sketch was created to bring awareness to the difference of emotions displayed on Twitter in different geographical locations.
+			<br><br>
+			<canvas data-processing-sources="processing/Emotion_js.pde"></canvas>
+			<br><br><br>
+			
+			<h3><span class="byline">| Speedy Keys, the Xbox keyboard</span></h3> 
+			I served as the Product Manager in this scrum-based group project for Human Computer Interaction. We had to choose an interface that we wanted to
+			improve, so we chose to improve the tedious text-entry process on the Xbox. My role was to evaluate the customer's needs and ensure that
+			our final design was user-centered. After leading a focus group, I brought the user's concerns to my team and we developed a prototype.
+			In our interface, the keyboard is broken up into 4 radial menus that are accessible from pressing a "hot key," or the left and right bumpers and triggers.
+			To select a letter, the user holds a "hot key", rotates the left thumbstick to the desired letter, and releases.
+			<br><br><center>
+			<img src = "images/speedykeys.png" alt="Speedy Keys Interface" height="300" width="500"><br>
+			</center>
+			<br><br><br>
+			
+			<h3><span class="byline">| L-System Explorer</span></h3> 
+			This was my final project for the class Intro to Digital Arts and Sciences. In this program, you can choose from a variety of pre-made L-systems,
+			change a few of the many variables to experiment with the outcomes, or try to create your own rules for a brand new L-system.
+			<br><br>
+			<center>
+			<img src = "/images/LSystemScreenshot.PNG" alt="L-System Explorer" height="300" width="500"><br>
+			<a href="LSystemExplorer-KatelynSmith.jar" class="button">Download L-System Explorer</a></center>
+			<br><br><br>
+			
+			<h3><span class="byline">| Artwork</span></h3> 
+			In my spare time, I enjoy working with different mediums to produce varieties of artwork. From traditional pencil and paint, to 
+			digital paintings, to 3D models, you'll find some of my work on my DeviantArt profile. Click the button below to explore!
+			<br>
+			<center>
+			<br>
+			<img src = "images/srukali.jpg" alt="Srukali" height="380" width="500"><br>
+			<a href="http://katelynicole.deviantart.com/" class="button">My DeviantArt</a></center> 
+			 </div></div>
+	</div>
+<div id="wrapper1">
+	<div id="contact" class="container">
+		<div>
+			<header class="title">
+				<h2>Get in touch</h2>
+				I'm available through any one of the following mediums</header>
+			<ul class="contact">
+				<li><a href="mailto:katelynicole.smith@gmail.com"><img src="images/gmail.png" height="105" width="140"></a></li>
+				<li><a href="http://www.linkedin.com/profile/view?id=209689078"><img src="images/linkedin.png" height="100" width="100"><span>LinkedIn</span></a></li>
+				<li><a href="http://katelynicole.deviantart.com/"> <img src="images/deviantart.png" height="100" width="100"><span>DeviantArt</span></a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	<p>Copyright (c) 2014 Katelyn Smith. All rights reserved.</p>
+</div>
+</body>
+</html>
