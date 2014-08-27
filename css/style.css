@@ -33,7 +33,7 @@ h1.brand {
  #portfolioSection, #aboutMe, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
-#aboutMe{background: #fff;text-align: center;border-top: 1px solid #ddd;}
+#aboutMe{background: #fff;border-top: 1px solid #ddd;}
 #aboutMe h4 {
     margin:25px 0;
 }
