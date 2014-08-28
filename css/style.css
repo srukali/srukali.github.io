@@ -231,10 +231,10 @@ border-bottom: 0;
     background:#C57A63;
 }
 
-.btn-resume:hover{
-    background: #BB674D;
-};
-
 .btn-portfolio:hover{
     background: #47795D;
+};
+
+.btn-resume:hover{
+    background: #BB674D;
 };
