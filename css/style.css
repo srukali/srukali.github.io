@@ -222,19 +222,3 @@ color: #FC3C00;
 border-bottom: 0;
 }
 }
-
-.btn-portfolio{
-    background:#579472;
-};
-
-.btn-portfolio:hover{
-    background: #47795D;
-};
-
-.btn-resume{
-    background:#C57A63;
-};
-
-.btn-resume:hover{
-    background: #BB674D;
-};
