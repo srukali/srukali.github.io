@@ -92,32 +92,23 @@ h1.brand {
 #resumeSection .thumbnails > li.span4{ width:350px;}
 
 
-#recentpostSection{ padding:70px 0 ; background:#b5d5e1;  text-align: center; }
-#recentpostSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
-#recentpostSection .thumbnails  p {
-    color: #909090;
-    font-size: 22px;
-    line-height: 27px;
-    margin:20px 0 0;
-    padding-bottom:10px;
-}
-
-#recentpostSection  p {
+#artSection{ padding:70px 0 ; background:#b5d5e1;  text-align: center; }
+#artSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
+#artSection  p {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
     margin: 15px 0;
 }
 
-#recentpostSection h4 {
+#artSection h4 {
     font-size: 32px;line-height: 40px; margin:10px 0;
 }
-#recentpostSection h6 {
+#artSection h6 {
     font-size: 20px; font-style:italic;
 }
-#recentpostSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
-#recentpostSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
-#recentpostSection .thumbnails > li.span4{ width:350px;}
+#artSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
+
 
 
 
