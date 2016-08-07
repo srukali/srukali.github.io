@@ -29,7 +29,7 @@ a {
 }
 
 a:hover,a:focus,a:active,a.active {
-    color: #bc519e;
+    color: #664884;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #bc519e;
+    background-color: #664884;
 }
 
 .btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #bc519e;
+    background-color: #664884;
 }
 
 .btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl {
@@ -116,7 +116,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
-    color: #bc519e;
+    color: #664884;
 }
 
 .navbar-default .navbar-collapse {
@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #bc519e;
+    background-color: #664884;
 }
 
 @media (min-width:768px) {
@@ -359,17 +359,6 @@ section h3.section-subheading {
     list-style: none;
     padding: 0;
     position: relative;
-}
-
-.timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: "";
-    width: 2px;
-    background-color: #f1f1f1;
-    left: 40px;
-    margin-left: -1.5px;
 }
 
 .timeline>li {
