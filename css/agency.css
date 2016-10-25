@@ -274,6 +274,10 @@ section h3.section-subheading {
     }
 }
 
+.contact-section {
+    color: white;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
