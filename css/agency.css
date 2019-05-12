@@ -85,6 +85,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px;
+    margin-bottom: 35px;
 }
 
 .btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl {
@@ -295,6 +296,7 @@ section h3.contact-section {
 #portfolio .portfolio-item {
     margin: 0 0 15px;
     right: 0;
+    height: 275px
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -302,6 +304,10 @@ section h3.contact-section {
     position: relative;
     max-width: 400px;
     margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link img {
+    max-height: 185px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -704,6 +710,7 @@ ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a
 
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
+    max-height: 400px;
 }
 
 .portfolio-modal .close-modal {
